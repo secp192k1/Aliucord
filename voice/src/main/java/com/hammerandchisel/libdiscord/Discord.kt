@@ -379,7 +379,7 @@ class Discord @JvmOverloads constructor(private val context: Context, i: Int = -
         const val LOGLEVEL_DEBUG: Int = 2
         const val LOGLEVEL_DEFAULT: Int = -1
         const val DEFAULT_VIDEO_MAX_BITRATE: Int = 2_500_000  // 2500 kbps
-        const val DEFAULT_CONTEXT = "stream"
+        const val DEFAULT_CONTEXT = "default"
         const val STREAM_CONTEXT = "stream"
 
         // The MediaEngineConnectionLegacy ctor calls connectToServer NOT async
