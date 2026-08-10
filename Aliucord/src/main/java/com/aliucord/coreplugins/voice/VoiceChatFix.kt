@@ -274,6 +274,7 @@ internal class VoiceChatFix : CorePlugin(Manifest("VoiceChatFix"))  {
         patchStreamSettingsSheet()
         ModernAudioDevices.register(patcher)
         StreamZoom.register(patcher)
+        ScreenshareForeground.register(patcher)
 
         // Ask the server for max quality on that stream when zoomed
         StreamQuality.onBoost = { userId, boost ->
