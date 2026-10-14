@@ -56,6 +56,12 @@ internal fun init(appCtx: Application) {
     }
 
     try {
+        initMicroG(appCtx)
+    } catch (e: Throwable) {
+        Logger.e("Failed to set up microG support", e)
+    }
+
+    try {
         Injector(appCtx).onApplicationCreate()
     } catch (t: Throwable) {
         Logger.errorToast(appCtx, "Failed to run Aliucord Injector", t)
